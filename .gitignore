@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Logs
+debug-storybook.log
+
+# IDE
+.idea
