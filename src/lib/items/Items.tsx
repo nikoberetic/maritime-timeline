@@ -15,7 +15,7 @@ import {
   CalendarRedIcon,
   DeleteSlotIcon,
   SignOffIcon,
-  BlueEditIcon,
+  EditIcon,
   PlanSignOffActivitiesIcon,
 } from "maritime-ui";
 import { getInitials } from "@/utils/getInitials";
@@ -556,7 +556,7 @@ export default class Items<
                                 }}
                                 onDoubleClick={(e) => e.stopPropagation()}
                               >
-                                <BlueEditIcon />
+                                <EditIcon />
                               </div>
                             )}
                             {item.cancelActivity && (
