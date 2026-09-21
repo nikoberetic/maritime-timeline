@@ -1,6 +1,6 @@
 {
   "name": "maritime-timeline",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Timeline component based on react-calendar-timeline",
   "type": "module",
   "main": "./dist/maritime-timeline.cjs",
@@ -45,7 +45,7 @@
     "@vitest/browser-playwright": "^4.1.10",
     "@vitest/coverage-v8": "^4.1.10",
     "dayjs": "^1.11.21",
-    "maritime-ui": "0.1.86",
+    "maritime-ui": "0.1.103",
     "playwright": "^1.61.1",
     "prettier": "^3.7.4",
     "react": "^19.2.3",

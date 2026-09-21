@@ -2715,10 +2715,10 @@ make-dir@^4.0.0:
   dependencies:
     semver "^7.5.3"
 
-maritime-ui@0.1.86:
-  version "0.1.86"
-  resolved "https://registry.yarnpkg.com/maritime-ui/-/maritime-ui-0.1.86.tgz#ea38ddda3a4c662754d0845b14b2fffe0893009f"
-  integrity sha512-35cnTpkTpgxps6ArGYO1J7cYeE5/b9UqV2e6/lUctRelQM4ZP11aLNF4PIrA8CAaQ/l31aSOKJAWNQ39U+fQpQ==
+maritime-ui@0.1.103:
+  version "0.1.103"
+  resolved "https://registry.yarnpkg.com/maritime-ui/-/maritime-ui-0.1.103.tgz#7b6002a3d99d09471a1b0b59e9fcc1977c196f42"
+  integrity sha512-57MJEIJTpznTNHoFSh4B0NzVRzilnSEPHpBMMmZE8Ld97O2RRVGynpPb1D930lwH2y5A0zHE9XWmjDWoLCGIjA==
   dependencies:
     clsx "^2.1.1"
     dayjs "^1.11.21"

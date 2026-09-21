@@ -894,8 +894,10 @@ $date-header-color: #000 !default;
     //color: #fff;
     border-bottom: 1px solid $border-color;
     border-top: 2px solid #dedee1;
-    position: sticky;
-    top: 77px;
+    // Ofset lepljivog headera zavisi od trake koju aplikacija drzi iznad timeline-a, pa ga
+    // zadaje potrosac preko `--rct-header-top`; `--rct-header-position: static` gasi lepljenje.
+    position: var(--rct-header-position, sticky);
+    top: var(--rct-header-top, 0);
     z-index: 103;
   }
 
