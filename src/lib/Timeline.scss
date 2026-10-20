@@ -11,19 +11,19 @@ $row-background-odd: transparent !default;
 $border-color: #333f4833 !default;
 $border-width: 1px;
 $thick-border-width: 2px;
-$sidebar-color: #ffffff !default;
-$sidebar-background-color: #f7f7f8 !default;
+$sidebar-color: var(--white) !default;
+$sidebar-background-color: var(--neutral-background-50) !default;
 $list-item-padding: 4px;
 //$weekend: #333F4833 !default;
-$weekend: #f7f7f8 !default;
+$weekend: var(--neutral-background-50) !default;
 
-$date-header-background: #f7f7f8 !default;
-$date-header-color: #000 !default;
+$date-header-background: var(--neutral-background-50) !default;
+$date-header-color: var(--black) !default;
 
 .react-calendar-timeline {
   border-width: 0 2px 2px 2px;
   border-style: solid;
-  border-color: #dedee1;
+  border-color: var(--neutral-line);
   border-radius: 4px;
 
   * {
@@ -55,7 +55,7 @@ $date-header-color: #000 !default;
   .rct-item {
     border-width: 3px 3px 3px 8px;
     border-style: solid;
-    border-color: #dedee1;
+    border-color: var(--neutral-line);
     border-radius: 4px;
     padding: 3px 4px;
     background: rgba(245, 245, 246, 1);
@@ -80,292 +80,293 @@ $date-header-color: #000 !default;
       }
     }
 
-    &.primary {
-      border-color: #365eed;
-      background: #e2ecfe;
+    &.primary,
+    &.info {
+      border-color: var(--blue-500);
+      background: var(--blue-100);
 
       .rct-item-content {
         .initials {
-          background-color: #365eed;
+          background-color: var(--blue-500);
         }
 
         .rct-item-overlap {
-          border-color: #365eed;
+          border-color: var(--blue-500);
           background-color: #c2cefa;
           background-image: repeating-linear-gradient(
-              135deg,
-              #365eed 0px,
-              #365eed 1px,
-              transparent 1px,
-              transparent 5px
+            135deg,
+            var(--blue-500) 0px,
+            var(--blue-500) 1px,
+            transparent 1px,
+            transparent 5px
           );
         }
 
         .rct-item-text .rct-item-status {
-          color: #365eed;
+          color: var(--blue-500);
         }
 
         .rct-item-badge {
-          background: #b6cffc;
-          color: #365eed;
+          background: var(--blue-200);
+          color: var(--blue-500);
         }
 
         .rct-item-tooltip-component {
-          border-color: #365eed;
+          border-color: var(--blue-500);
           background-color: #e1e7fc;
 
           &:before {
-            border-right-color: #365eed;
+            border-right-color: var(--blue-500);
           }
         }
       }
     }
 
     &.purple {
-      border-color: #803cf2;
+      border-color: var(--purple-500);
       background: #f3ecff;
 
       .rct-item-content {
         .initials {
-          background-color: #803cf2;
+          background-color: var(--purple-500);
         }
 
         .rct-item-overlap {
-          border-color: #803cf2;
-          background-color: #ece2fd;
+          border-color: var(--purple-500);
+          background-color: var(--purple-100);
           background-image: repeating-linear-gradient(
-              135deg,
-              #803cf2 0px,
-              #803cf2 1px,
-              transparent 1px,
-              transparent 5px
+            135deg,
+            var(--purple-500) 0px,
+            var(--purple-500) 1px,
+            transparent 1px,
+            transparent 5px
           );
         }
 
         .rct-item-text .rct-item-status {
-          color: #803cf2;
+          color: var(--purple-500);
         }
 
         .rct-item-badge {
-          background: #ece2fd;
-          color: #803cf2;
+          background: var(--purple-100);
+          color: var(--purple-500);
         }
 
         .rct-item-tooltip-component {
-          border-color: #803cf2;
-          background-color: #ece2fd;
+          border-color: var(--purple-500);
+          background-color: var(--purple-100);
 
           &:before {
-            border-right-color: #803cf2;
+            border-right-color: var(--purple-500);
           }
         }
       }
     }
 
     &.pink {
-      border-color: #ff3087;
+      border-color: var(--magenta-500);
       background: #ffd9f8;
 
       .rct-item-content {
         .initials {
-          background-color: #ff3087;
+          background-color: var(--magenta-500);
         }
 
         .rct-item-overlap {
-          border-color: #ff3087;
+          border-color: var(--magenta-500);
           background-color: #ffd9f8;
           background-image: repeating-linear-gradient(
-              135deg,
-              #ff3087 0px,
-              #ff3087 1px,
-              transparent 1px,
-              transparent 5px
+            135deg,
+            var(--magenta-500) 0px,
+            var(--magenta-500) 1px,
+            transparent 1px,
+            transparent 5px
           );
         }
 
         .rct-item-text .rct-item-status {
-          color: #ff3087;
+          color: var(--magenta-500);
         }
 
         .rct-item-badge {
           background: #ffd9f8;
-          color: #ff3087;
+          color: var(--magenta-500);
         }
 
         .rct-item-tooltip-component {
-          border-color: #ff3087;
+          border-color: var(--magenta-500);
           background-color: #ffd9f8;
 
           &:before {
-            border-right-color: #ff3087;
+            border-right-color: var(--magenta-500);
           }
         }
       }
     }
 
     &.past {
-      border-color: #B3B3BC;
+      border-color: var(--neutral-border);
       background: #e8e8eb;
 
       .rct-item-content {
         .initials {
-          background-color: #B3B3BC;
+          background-color: var(--neutral-border);
         }
 
         .rct-item-overlap {
-          border-color: #B3B3BC;
+          border-color: var(--neutral-border);
           background-color: #e8e8eb;
           background-image: repeating-linear-gradient(
-              135deg,
-              #B3B3BC 0px,
-              #B3B3BC 1px,
-              transparent 1px,
-              transparent 5px
+            135deg,
+            var(--neutral-border) 0px,
+            var(--neutral-border) 1px,
+            transparent 1px,
+            transparent 5px
           );
         }
 
         .rct-item-text {
           .rct-item-title {
-            color: #6a6a77;
+            color: var(--neutral-placeholder);
           }
 
           .rct-item-status {
-            color: #B3B3BC;
+            color: var(--neutral-border);
           }
         }
 
         .rct-item-badge {
           background: #e8e8eb;
-          color: #B3B3BC;
+          color: var(--neutral-border);
         }
 
         .rct-item-tooltip-component {
-          border-color: #B3B3BC;
+          border-color: var(--neutral-border);
           background-color: #e8e8eb;
 
           &:before {
-            border-right-color: #B3B3BC;
+            border-right-color: var(--neutral-border);
           }
         }
       }
     }
 
     &.success {
-      border-color: #0f860f;
+      border-color: var(--green-500);
       background: #daecda;
 
       .rct-item-content {
         .initials {
-          background-color: #0f860f;
+          background-color: var(--green-500);
         }
 
         .rct-item-text .rct-item-status {
-          color: #0f860f;
+          color: var(--green-500);
         }
 
         .rct-item-badge {
           background: #b9e9c3;
-          color: #0f860f;
+          color: var(--green-500);
         }
 
         .rct-item-tooltip-component {
-          border-color: #0f860f;
+          border-color: var(--green-500);
           background-color: #b9e9c3;
 
           &:before {
-            border-right-color: #0f860f;
+            border-right-color: var(--green-500);
           }
         }
       }
     }
 
     &.warning {
-      border-color: #eaad00;
-      background: #fffdee;
+      border-color: var(--yellow-500);
+      background: var(--yellow-50);
 
       .rct-item-content {
         .initials {
-          background-color: #eaad00;
+          background-color: var(--yellow-500);
         }
 
         .rct-item-overlap {
-          border-color: #eaad00;
-          background-color: #fffdee;
+          border-color: var(--yellow-500);
+          background-color: var(--yellow-50);
           background-image: repeating-linear-gradient(
-              135deg,
-              #eaad00 0px,
-              #eaad00 1px,
-              transparent 1px,
-              transparent 5px
+            135deg,
+            var(--yellow-500) 0px,
+            var(--yellow-500) 1px,
+            transparent 1px,
+            transparent 5px
           );
         }
 
         .rct-item-text .rct-item-status {
-          color: #eaad00;
+          color: var(--yellow-800);
         }
 
         .rct-item-badge {
           background: #ffcc2933;
-          color: #eaad00;
+          color: var(--yellow-800);
         }
 
         .rct-item-tooltip-component {
-          border-color: #eaad00;
-          background-color: #fffdee;
+          border-color: var(--yellow-500);
+          background-color: var(--yellow-50);
 
           &:before {
-            border-right-color: #eaad00;
+            border-right-color: var(--yellow-500);
           }
         }
       }
     }
 
     &.danger {
-      border-color: #ff371c;
+      border-color: var(--red-500);
       background: #ffd9d6;
 
       &.overlapping {
         background-image: repeating-linear-gradient(
-            135deg,
-            rgba(255, 55, 28, 0.5) 0px,
-            rgba(255, 55, 28, 0.5) 1px,
-            transparent 1px,
-            transparent 5px
+          135deg,
+          rgba(255, 55, 28, 0.5) 0px,
+          rgba(255, 55, 28, 0.5) 1px,
+          transparent 1px,
+          transparent 5px
         );
       }
 
       .rct-item-content {
         .initials {
-          background-color: #ff371c;
+          background-color: var(--red-500);
         }
 
         .rct-item-overlap {
-          border-color: #ff371c;
+          border-color: var(--red-500);
           background-color: #ffd9d6;
           background-image: repeating-linear-gradient(
-              135deg,
-              #ff371c 0px,
-              #ff371c 1px,
-              transparent 1px,
-              transparent 5px
+            135deg,
+            var(--red-500) 0px,
+            var(--red-500) 1px,
+            transparent 1px,
+            transparent 5px
           );
         }
 
         .rct-item-text .rct-item-status {
-          color: #ff371c;
+          color: var(--red-500);
         }
 
         .rct-item-badge {
           background: #ffc2c2;
-          color: #ff371c;
+          color: var(--red-500);
         }
 
         .rct-item-tooltip-component {
-          border-color: #ff371c;
+          border-color: var(--red-500);
           background-color: #ffd9d6;
 
           &:before {
-            border-right-color: #ff371c;
+            border-right-color: var(--red-500);
           }
         }
       }
@@ -395,61 +396,61 @@ $date-header-color: #000 !default;
     //&.assignment-slot.past {
     &.assignment-slot {
       background: #e8e8eb;
-      border-color: #B3B3BC;
+      border-color: var(--neutral-border);
       opacity: 0.7;
 
       .rct-item-content {
         .initials {
-          background-color: #B3B3BC;
+          background-color: var(--neutral-border);
         }
 
         .rct-item-text .rct-item-status {
-          color: #B3B3BC;
+          color: var(--neutral-border);
         }
 
         .rct-item-badge {
           background: #e8e8eb;
-          color: #B3B3BC;
+          color: var(--neutral-border);
         }
       }
     }
 
     &.azure {
-      border-color: #00c3e7;
+      border-color: var(--cyan-500);
       background: #f2feff;
 
       .rct-item-content {
         .initials {
-          background-color: #00c3e7;
+          background-color: var(--cyan-500);
         }
 
         .rct-item-overlap {
-          border-color: #00c3e7;
-          background-color: #ccfbfe;
+          border-color: var(--cyan-500);
+          background-color: var(--cyan-100);
           background-image: repeating-linear-gradient(
-              135deg,
-              #00c3e7 0px,
-              #00c3e7 1px,
-              transparent 1px,
-              transparent 5px
+            135deg,
+            var(--cyan-500) 0px,
+            var(--cyan-500) 1px,
+            transparent 1px,
+            transparent 5px
           );
         }
 
         .rct-item-text .rct-item-status {
-          color: #00c3e7;
+          color: var(--cyan-500);
         }
 
         .rct-item-badge {
-          background: #ccfbfe;
-          color: #00c3e7;
+          background: var(--cyan-100);
+          color: var(--cyan-500);
         }
 
         .rct-item-tooltip-component {
-          border-color: #00c3e7;
-          background-color: #ccfbfe;
+          border-color: var(--cyan-500);
+          background-color: var(--cyan-100);
 
           &:before {
-            border-right-color: #00c3e7;
+            border-right-color: var(--cyan-500);
           }
         }
       }
@@ -490,7 +491,7 @@ $date-header-color: #000 !default;
         justify-content: center;
         border-radius: 50%;
         flex-shrink: 0;
-        color: #ffffff;
+        color: var(--white);
       }
 
       .rct-item-text {
@@ -503,7 +504,7 @@ $date-header-color: #000 !default;
           font-size: 13px;
           line-height: 1.2;
           letter-spacing: 0.25px;
-          color: #4d4d56;
+          color: var(--neutral-label);
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -521,7 +522,7 @@ $date-header-color: #000 !default;
           font-size: 11px;
           line-height: 1.2;
           letter-spacing: 0.25px;
-          color: #4d4d56;
+          color: var(--neutral-label);
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -561,14 +562,14 @@ $date-header-color: #000 !default;
         }
 
         .rct-item-overlap {
-          border-color: #dedee1;
+          border-color: var(--neutral-line);
           background-color: #ededed;
           background-image: repeating-linear-gradient(
-              135deg,
-              #dedee1 0px,
-              #dedee1 1px,
-              transparent 1px,
-              transparent 5px
+            135deg,
+            var(--neutral-line) 0px,
+            var(--neutral-line) 1px,
+            transparent 1px,
+            transparent 5px
           );
         }
       }
@@ -576,17 +577,17 @@ $date-header-color: #000 !default;
       .rct-item-overlap {
         position: absolute;
         top: 0;
-        border: 3px solid #0f860f;
+        border: 3px solid var(--green-500);
         background-color: #daecda;
         pointer-events: none;
         transform: translate(-12px, -6px);
         height: calc(100% + 12px);
         background-image: repeating-linear-gradient(
-            135deg,
-            #7ed890 0px,
-            #7ed890 1px,
-            transparent 1px,
-            transparent 5px
+          135deg,
+          #7ed890 0px,
+          #7ed890 1px,
+          transparent 1px,
+          transparent 5px
         );
       }
 
@@ -602,8 +603,8 @@ $date-header-color: #000 !default;
           background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.8344 2.05855C7.34241 1.14414 8.65748 1.14414 9.16549 2.05855L14.6991 12.0191C15.1929 12.9078 14.5503 14 13.5336 14H2.46629C1.44964 14 0.80702 12.9078 1.30075 12.0191L6.8344 2.05855ZM8 5.33335C8.36819 5.33335 8.66667 5.63183 8.66667 6.00002V9.33335C8.66667 9.70154 8.36819 10 8 10C7.63181 10 7.33333 9.70154 7.33333 9.33335V6.00002C7.33333 5.63183 7.63181 5.33335 8 5.33335ZM8 10.6667C8.36819 10.6667 8.66667 10.9652 8.66667 11.3334V11.34C8.66667 11.7082 8.36819 12.0067 8 12.0067C7.63181 12.0067 7.33333 11.7082 7.33333 11.34V11.3334C7.33333 10.9652 7.63181 10.6667 8 10.6667Z' fill='%23EAAD00'/%3E%3C/svg%3E%0A");
 
           .rct-item-tooltip {
-            color: #eaad00;
-            background: #fffdee;
+            color: var(--yellow-800);
+            background: var(--yellow-50);
           }
         }
 
@@ -611,8 +612,8 @@ $date-header-color: #000 !default;
           background-image: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.83333 3.33331C1.83333 2.22874 2.72876 1.33331 3.83333 1.33331H13.1667C14.2712 1.33331 15.1667 2.22874 15.1667 3.33331V12.6666C15.1667 13.7712 14.2712 14.6666 13.1667 14.6666H3.83333C2.72876 14.6666 1.83333 13.7712 1.83333 12.6666V3.33331ZM6.02859 5.52858C6.28894 5.26823 6.71105 5.26823 6.9714 5.52858L8.5 7.05717L10.0286 5.52858C10.2889 5.26823 10.7111 5.26823 10.9714 5.52858C11.2317 5.78892 11.2317 6.21103 10.9714 6.47138L9.4428 7.99998L10.9714 9.52858C11.2317 9.78892 11.2317 10.211 10.9714 10.4714C10.7111 10.7317 10.2889 10.7317 10.0286 10.4714L8.5 8.94279L6.9714 10.4714C6.71105 10.7317 6.28894 10.7317 6.02859 10.4714C5.76824 10.211 5.76824 9.78892 6.02859 9.52858L7.55719 7.99998L6.02859 6.47138C5.76824 6.21103 5.76824 5.78892 6.02859 5.52858Z' fill='%23D71A00'/%3E%3C/svg%3E%0A");
 
           .rct-item-tooltip {
-            color: #ff371c;
-            background: #ffdede;
+            color: var(--red-500);
+            background: var(--red-100);
           }
         }
 
@@ -680,14 +681,14 @@ $date-header-color: #000 !default;
         border-radius: 4px;
         border-width: 3px 3px 3px 8px;
         border-style: solid;
-        border-color: #dedee1;
+        border-color: var(--neutral-line);
         display: flex;
         z-index: 105;
         cursor: pointer;
         transition: all 160ms ease-in-out;
 
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           top: 10px;
           left: -17px;
@@ -706,7 +707,7 @@ $date-header-color: #000 !default;
 
         &.customization-1 {
           .rct-item-title span {
-            color: #ff371c;
+            color: var(--red-500);
           }
         }
       }
@@ -721,7 +722,7 @@ $date-header-color: #000 !default;
     position: relative;
     box-sizing: border-box;
     border-right: $border-width solid $border-color;
-    background: #f7f7f8;
+    background: var(--neutral-background-50);
     cursor: default;
 
     &.rct-sidebar-right {
@@ -738,7 +739,7 @@ $date-header-color: #000 !default;
       line-height: 1.2 !important;
       letter-spacing: 0.25px;
       text-align: right;
-      color: #365eed;
+      color: var(--blue-500);
 
       &:last-child {
         border-bottom: none;
@@ -759,7 +760,7 @@ $date-header-color: #000 !default;
       .rct-sidebar-ship {
         font-weight: 700;
         font-size: 13px;
-        color: #6a6a77;
+        color: var(--neutral-placeholder);
         margin-bottom: 2px;
         //overflow: hidden;
         text-overflow: ellipsis;
@@ -777,7 +778,7 @@ $date-header-color: #000 !default;
           left: calc(100% + 8px);
           z-index: 104;
           padding: 8px 12px;
-          background-color: #ffffff;
+          background-color: var(--white);
           border-radius: 4px;
           box-shadow: 0 4px 12px 4px rgba(0, 0, 0, 0.1);
           opacity: 0;
@@ -867,7 +868,7 @@ $date-header-color: #000 !default;
     cursor: pointer;
     font-size: 13px;
     font-weight: 700;
-    color: #6a6a77;
+    color: var(--neutral-placeholder);
     background-color: $date-header-background;
     border-left: 1px solid $border-color;
     margin-left: -1px;
@@ -886,14 +887,14 @@ $date-header-color: #000 !default;
     //background-color: initial;
     border-left: 1px solid $border-color;
     //border-right: 1px solid $border-color;
-    color: #6a6a77;
+    color: var(--neutral-placeholder);
   }
 
   .rct-header-root {
     background: $sidebar-background-color;
     //color: #fff;
     border-bottom: 1px solid $border-color;
-    border-top: 2px solid #dedee1;
+    border-top: 2px solid var(--neutral-line);
     // Ofset lepljivog headera zavisi od trake koju aplikacija drzi iznad timeline-a, pa ga
     // zadaje potrosac preko `--rct-header-top`; `--rct-header-position: static` gasi lepljenje.
     position: var(--rct-header-position, sticky);
