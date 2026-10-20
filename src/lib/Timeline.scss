@@ -21,10 +21,10 @@ $date-header-background: var(--neutral-background-50) !default;
 $date-header-color: var(--black) !default;
 
 .react-calendar-timeline {
-  border-width: 0 2px 2px 2px;
+  border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: var(--neutral-line);
-  border-radius: 4px;
+  border-radius: 12px;
 
   * {
     box-sizing: border-box;
@@ -56,7 +56,7 @@ $date-header-color: var(--black) !default;
     border-width: 3px 3px 3px 8px;
     border-style: solid;
     border-color: var(--neutral-line);
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 3px 4px;
     background: rgba(245, 245, 246, 1);
     position: absolute;
@@ -485,7 +485,7 @@ $date-header-color: var(--black) !default;
         margin-right: 6px;
         font-weight: 700;
         font-size: 11px;
-        letter-spacing: 0.25px;
+        letter-spacing: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -503,7 +503,7 @@ $date-header-color: var(--black) !default;
           font-weight: 700;
           font-size: 13px;
           line-height: 1.2;
-          letter-spacing: 0.25px;
+          letter-spacing: 0;
           color: var(--neutral-label);
           overflow: hidden;
           text-overflow: ellipsis;
@@ -521,7 +521,7 @@ $date-header-color: var(--black) !default;
           font-weight: 700;
           font-size: 11px;
           line-height: 1.2;
-          letter-spacing: 0.25px;
+          letter-spacing: 0;
           color: var(--neutral-label);
           overflow: hidden;
           text-overflow: ellipsis;
@@ -541,7 +541,7 @@ $date-header-color: var(--black) !default;
         gap: 6px;
         font-weight: 700;
         font-size: 11px;
-        letter-spacing: 0.25px;
+        letter-spacing: 0;
         //margin-right: auto;
         //margin-left: auto;
         overflow: hidden;
@@ -628,7 +628,7 @@ $date-header-color: var(--black) !default;
           visibility: hidden;
           top: -7px;
           left: 26px;
-          border-radius: 4px;
+          border-radius: 6px;
           font-size: 11px;
           line-height: 1.2;
           white-space: nowrap;
@@ -654,12 +654,12 @@ $date-header-color: var(--black) !default;
       }
 
       .rct-item-badge {
-        border-radius: 4px;
+        border-radius: 999px;
         padding: 4px;
         font-weight: 700;
         font-size: 11px;
         line-height: 1.2;
-        letter-spacing: 0.25px;
+        letter-spacing: 0;
         //margin-left: auto;
         //position: absolute;
         //right: 0;
@@ -678,7 +678,7 @@ $date-header-color: var(--black) !default;
         opacity: 0;
         visibility: hidden;
         padding: 5px;
-        border-radius: 4px;
+        border-radius: 8px;
         border-width: 3px 3px 3px 8px;
         border-style: solid;
         border-color: var(--neutral-line);
@@ -737,7 +737,7 @@ $date-header-color: var(--black) !default;
       font-weight: 400;
       font-size: 11px;
       line-height: 1.2 !important;
-      letter-spacing: 0.25px;
+      letter-spacing: 0;
       text-align: right;
       color: var(--blue-500);
 
@@ -779,7 +779,7 @@ $date-header-color: var(--black) !default;
           z-index: 104;
           padding: 8px 12px;
           background-color: var(--white);
-          border-radius: 4px;
+          border-radius: 6px;
           box-shadow: 0 4px 12px 4px rgba(0, 0, 0, 0.1);
           opacity: 0;
           visibility: hidden;
@@ -879,7 +879,7 @@ $date-header-color: var(--black) !default;
     }
 
     &.first {
-      border-left-width: 2px;
+      border-left-width: 1px;
     }
   }
 
@@ -894,7 +894,7 @@ $date-header-color: var(--black) !default;
     background: $sidebar-background-color;
     //color: #fff;
     border-bottom: 1px solid $border-color;
-    border-top: 2px solid var(--neutral-line);
+    border-top: 1px solid var(--neutral-line);
     // Ofset lepljivog headera zavisi od trake koju aplikacija drzi iznad timeline-a, pa ga
     // zadaje potrosac preko `--rct-header-top`; `--rct-header-position: static` gasi lepljenje.
     position: var(--rct-header-position, sticky);
