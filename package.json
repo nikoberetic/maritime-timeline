@@ -1,6 +1,6 @@
 {
   "name": "maritime-timeline",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Timeline component based on react-calendar-timeline",
   "type": "module",
   "main": "./dist/maritime-timeline.cjs",
