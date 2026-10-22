@@ -12,13 +12,13 @@ export const overridableStyles = {
   // zIndex: 80,
 };
 export const selectedStyle = {
-  background: "#ffc107",
+  background: "var(--yellow-500)",
   borderTopWidth: "1px",
   borderLeftWidth: "1px",
   borderRightWidth: "1px",
   borderBottomWidth: "1px",
   borderStyle: "solid",
-  borderColor: "#ff9800",
+  borderColor: "var(--yellow-600)",
   zIndex: 82,
 };
 export const selectedAndCanMove = {

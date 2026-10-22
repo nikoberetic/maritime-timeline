@@ -17,11 +17,13 @@ import {
   SignOffIcon,
   EditIcon,
   PlanSignOffActivitiesIcon,
+  SignOnIcon,
+  CompleteIcon,
+  CancelIcon,
+  AlertTriangleIcon,
+  SquareXIcon,
 } from "maritime-ui";
 import { getInitials } from "@/utils/getInitials";
-import SignOnIcon from "../../icons/SignOnIcon";
-import CompleteIcon from "../../icons/CompleteIcon";
-import CancelIcon from "../../icons/CancelIcon";
 import clsx from "clsx";
 
 export type CanResize = true | false | "left" | "right" | "both";
@@ -443,6 +445,11 @@ export default class Items<
                                   }px)`,
                                 }}
                               >
+                                {item.warningTooltipText ? (
+                                  <AlertTriangleIcon />
+                                ) : (
+                                  <SquareXIcon />
+                                )}
                                 {item.warningTooltipText && (
                                   <div className="rct-item-tooltip">
                                     {item.warningTooltipText}

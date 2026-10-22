@@ -2331,10 +2331,10 @@ magic-string@^0.30.0, magic-string@^0.30.17:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.5"
 
-maritime-ui@0.1.103:
-  version "0.1.103"
-  resolved "https://registry.yarnpkg.com/maritime-ui/-/maritime-ui-0.1.103.tgz#7b6002a3d99d09471a1b0b59e9fcc1977c196f42"
-  integrity sha512-57MJEIJTpznTNHoFSh4B0NzVRzilnSEPHpBMMmZE8Ld97O2RRVGynpPb1D930lwH2y5A0zHE9XWmjDWoLCGIjA==
+maritime-ui@0.1.134:
+  version "0.1.134"
+  resolved "https://registry.yarnpkg.com/maritime-ui/-/maritime-ui-0.1.134.tgz#369337fc40724463d2de25afd92a1733d599b605"
+  integrity sha512-gfwWLceFKMIwbw0EFmJz8vd2OzuOj9ZhgaSCAGFv8pLrPRwHbCOrfhiLDxjmR+IxZHnR+8xfod/f8qKgLF2A0Q==
   dependencies:
     clsx "^2.1.1"
     dayjs "^1.11.21"
@@ -3045,10 +3045,10 @@ vite-plugin-dts@^4.5.0:
     local-pkg "^1.0.0"
     magic-string "^0.30.17"
 
-vite@^6.0.0:
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.4.3.tgz#85a164db7ce706f2a776812efa2b340f1721858e"
-  integrity sha512-NTKlcQjlAK7MlQoyb6LgaqHc8sso/pVyUJYWMws3jg21uTJw/LddqIFPcPqP6PzpgbIcZyKI85sFE4HBrQDA8A==
+vite@^6.4.5:
+  version "6.4.5"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.4.5.tgz#8da9987120422f92e432b6d25535b82cee867dad"
+  integrity sha512-4enwjFfi4IwtEh0w+jPzpLVOFQiPHmmzPxcHXQOyEur47o6u0jE573DmGpjA+7irXoMLYRZD5ZaFUEneS3abPg==
   dependencies:
     esbuild "^0.25.0"
     fdir "^6.4.4"

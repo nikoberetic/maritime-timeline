@@ -27,7 +27,7 @@ class SidebarHeader extends PureComponent<SidebarHeaderProps> {
         : this.props.leftSidebarWidth;
     return {
       style: {
-        color: style?.color ?? "#fff",
+        color: style?.color ?? "var(--white)",
         ...style,
         width,
       },
