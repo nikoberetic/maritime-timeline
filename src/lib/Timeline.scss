@@ -251,6 +251,12 @@ $date-header-color: var(--black) !default;
       }
     }
 
+    // Uz varijantu boje: traka je samo referenca (npr. bukirano pre checkout-a)
+    &.dashed {
+      border-width: 1px;
+      border-style: dashed;
+    }
+
     &.success {
       border-color: var(--green-500);
       background: var(--green-100);

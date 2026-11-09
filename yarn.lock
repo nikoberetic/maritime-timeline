@@ -2331,10 +2331,10 @@ magic-string@^0.30.0, magic-string@^0.30.17:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.5"
 
-maritime-ui@0.1.134:
-  version "0.1.134"
-  resolved "https://registry.yarnpkg.com/maritime-ui/-/maritime-ui-0.1.134.tgz#369337fc40724463d2de25afd92a1733d599b605"
-  integrity sha512-gfwWLceFKMIwbw0EFmJz8vd2OzuOj9ZhgaSCAGFv8pLrPRwHbCOrfhiLDxjmR+IxZHnR+8xfod/f8qKgLF2A0Q==
+maritime-ui@0.1.145:
+  version "0.1.145"
+  resolved "https://registry.yarnpkg.com/maritime-ui/-/maritime-ui-0.1.145.tgz#ffab377b895a332d6d241c3cb2a986c115b151f8"
+  integrity sha512-2EHrMJasq/TrRIwSxi5FInJ/NQRCWRhzOvtAG7KtOUt2cUDuaZXNEIy0FNqVWRh6ejCn7iJ+UAIBOg/XcN26BA==
   dependencies:
     clsx "^2.1.1"
     dayjs "^1.11.21"

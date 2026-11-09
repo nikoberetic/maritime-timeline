@@ -1,6 +1,6 @@
 {
   "name": "maritime-timeline",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Timeline component based on react-calendar-timeline",
   "type": "module",
   "main": "./dist/maritime-timeline.cjs",
@@ -42,7 +42,7 @@
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^5.1.1",
     "dayjs": "^1.11.21",
-    "maritime-ui": "0.1.134",
+    "maritime-ui": "0.1.145",
     "prettier": "^3.7.4",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
