@@ -179,11 +179,11 @@ export const vesselItems: TimelineItemBase<number>[] = [
     signOnFunc: () => log('signOn', 'Li Wei'),
   },
   {
-    id: 'slot_past_dashed_2',
+    id: 'slot_muted_2',
     group: 'v2_2nd_engineer',
     title: 'Hotel',
     img: '-1',
-    className: 'past dashed',
+    className: 'muted',
     status: 'booked',
     start_time: now.subtract(40, 'day').valueOf(),
     end_time: now.add(5, 'day').valueOf(),

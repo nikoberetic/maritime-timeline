@@ -25,6 +25,10 @@ $date-header-color: var(--black) !default;
   border-style: solid;
   border-color: var(--neutral-line);
   border-radius: 12px;
+  // Zaglavlje i leva kolona imaju svoju pozadinu i gornju liniju, pa bi bez secenja
+  // prelili zaobljene uglove. `clip`, a ne `hidden`: ne pravi kontejner za skrol, pa
+  // lepljivo zaglavlje i dalje radi.
+  overflow: clip;
 
   * {
     box-sizing: border-box;
@@ -251,10 +255,16 @@ $date-header-color: var(--black) !default;
       }
     }
 
-    // Uz varijantu boje: traka je samo referenca (npr. bukirano pre checkout-a)
-    &.dashed {
+    // Traka je samo referenca (npr. bukirano pre checkout-a): siva, isprekidana
+    &.muted {
       border-width: 1px;
       border-style: dashed;
+      border-color: var(--neutral-border);
+      background: var(--neutral-background);
+
+      .rct-item-content .rct-item-text .rct-item-status {
+        color: var(--neutral-placeholder);
+      }
     }
 
     &.success {
